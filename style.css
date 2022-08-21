@@ -1,23 +1,37 @@
-page 68
+html, body {
+  height: 100%;
+}
+
+body{
+  font-size: 10px;
+  background-color: rgb(149, 194, 215);
+  
+    diplay: flex;
+  flex-direction: column;
+}
 
 .detail-image {
   width: 90%;
 }
 
-.thumbnail-item{
-  display: block;
-  border: 1px solid rgb(100%, 100%, 100%);
-  border: 1px solid rgb(100%, 100%, 100%, 0.8);
 
+.thumbnail-item {
+  display: inline-block;
   min-width: 120px;
   max-width: 120px;
+
+  border: 1px solid rgb(100%, 100%, 100%);
+  border: 1px solid rgb(100%, 100%, 100%, 0.8);
 }
 
 .thumbnail-item + .thumbnail-item {
   margin-top: 10px;
 }
 
-.thumbnail-list{
+.thumbnail-list {
+  list-style: none;
+  padding: 0;
+
   flex: 0 1 auto;
   order: 2;
   display: flex;
@@ -46,26 +60,6 @@ a {
   text-decoration: none;
 }
 
-.logo-text {
-  background: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 37px;
-  font-family: sans-serif;
-}
-
-html, body {
-  height: 100%;
-}
-
-body{
-  diplay: flex;
-  flex-direction: column;
-
-  font-size: 10px;
-  background-color: rgb(149, 194, 215);
-}
-
 .main-header {
   flex: 0 1 auto;
 }
@@ -74,6 +68,14 @@ body{
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+}
+
+.logo-text {
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 37px;
+  font-family: sans-serif;
 }
 
 .detailed-image-container {
@@ -99,7 +101,6 @@ body{
 }
 
 
-
 #pidge {
   background: green;
 }
@@ -119,7 +120,6 @@ body{
 #kieth {
   background: black;
 }
-
 
 @media all and (min-width: 768px) {
   /* styles go here*/
